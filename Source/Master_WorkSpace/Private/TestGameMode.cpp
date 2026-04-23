@@ -1,0 +1,14 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "TestGameMode.h"
+
+#include "TesterCharacter.h"
+#include "TestPlayerController.h"
+
+ATestGameMode::ATestGameMode()
+{
+	DefaultPawnClass = ATesterCharacter::StaticClass();
+	PlayerControllerClass = ATestPlayerController::StaticClass();
+	
+}
